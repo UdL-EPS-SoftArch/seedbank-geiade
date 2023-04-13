@@ -23,6 +23,12 @@ import {HttpErrorInterceptor} from './error-handler/http-error-interceptor';
 import {AuthenticationBasicService} from './login-basic/authentication-basic.service';
 import {LoggedInGuard} from './login-basic/loggedin.guard';
 import {UserService} from './user/user.service';
+import { DonationDetailComponent } from './donation/donation-detail/donation-detail.component';
+import { DonationEditComponent } from './donation/donation-edit/donation-edit.component';
+import { DonationListComponent } from './donation/donation-list/donation-list.component';
+import { DonationAddComponent } from './donation/donation-add/donation-add.component';
+import { DonationDeleteComponent } from './donation/donation-delete/donation-delete.component';
+import { DonationSearchComponent } from './donation/donation-search/donation-search.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +41,13 @@ import {UserService} from './user/user.service';
     UserRegisterComponent,
     UserEditComponent,
     UserDeleteComponent,
-    UserSearchComponent
+    UserSearchComponent,
+    DonationDetailComponent,
+    DonationEditComponent,
+    DonationListComponent,
+    DonationAddComponent,
+    DonationDeleteComponent,
+    DonationSearchComponent
   ],
   imports: [
     BrowserModule,

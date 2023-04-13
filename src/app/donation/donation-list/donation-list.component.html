@@ -1,1 +1,26 @@
-<p>donation-list works!</p>
+<div class="card mb-1" *ngFor="let donation of donations">
+  <div class="card-block row m-1 col-12">
+    <div class="card-body row align-items-center">
+      <div class="col-3 mt-1">
+        <h6 class="card-subtitle text-muted">ID</h6>
+        <a class="card-text" [routerLink]="['/donations', donation.id]">{{donation.id}}</a>
+      </div>
+      <div class="col-3 mt-1">
+        <h6 class="card-subtitle text-muted">Amount</h6>
+        <p class="card-text">{{donation.amount}}</p>
+      </div>
+      <div class="col-3 mt-1">
+        <h6 class="card-subtitle text-muted">Weight</h6>
+        <p class="card-text">{{donation.weight}}</p>
+      </div>
+      <div class="col-3 mt-1">
+        <h6 class="card-subtitle text-muted">Location</h6>
+        <p class="card-text">{{donation.location}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ngb-pagination class="d-flex justify-content-center"
+                [(page)]="page" [pageSize]="pageSize" [collectionSize]="totalDonations"
+                (pageChange)="changePage()"></ngb-pagination>

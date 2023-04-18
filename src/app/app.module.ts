@@ -24,6 +24,7 @@ import {AuthenticationBasicService} from './login-basic/authentication-basic.ser
 import {LoggedInGuard} from './login-basic/loggedin.guard';
 import {UserService} from './user/user.service';
 import { PropagatorDeleteComponent } from './propagator/propagator-delete/propagator-delete.component';
+import { PropagatorDetailComponent } from './propagator/propagator-detail/propagator-detail.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PropagatorDeleteComponent } from './propagator/propagator-delete/propag
     UserEditComponent,
     UserDeleteComponent,
     UserSearchComponent,
-    PropagatorDeleteComponent
+    PropagatorDeleteComponent,
+    PropagatorDetailComponent
   ],
   imports: [
     BrowserModule,

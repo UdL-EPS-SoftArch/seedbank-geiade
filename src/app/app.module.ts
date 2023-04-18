@@ -24,6 +24,7 @@ import {AuthenticationBasicService} from './login-basic/authentication-basic.ser
 import {LoggedInGuard} from './login-basic/loggedin.guard';
 import {UserService} from './user/user.service';
 import { TakeComponent } from './take/take.component';
+import { TakeDeleteComponent } from './take/take-delete/take-delete.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { TakeComponent } from './take/take.component';
     UserEditComponent,
     UserDeleteComponent,
     UserSearchComponent,
-    TakeComponent
+    TakeComponent,
+    TakeDeleteComponent
   ],
   imports: [
     BrowserModule,

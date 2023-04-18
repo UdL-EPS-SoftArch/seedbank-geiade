@@ -26,6 +26,7 @@ import {UserService} from './user/user.service';
 import { TakeComponent } from './take/take.component';
 import { TakeDeleteComponent } from './take/take-delete/take-delete.component';
 import { TakeDetailComponent } from './take/take-detail/take-detail.component';
+import { TakeEditComponent } from './take/take-edit/take-edit.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { TakeDetailComponent } from './take/take-detail/take-detail.component';
     UserSearchComponent,
     TakeComponent,
     TakeDeleteComponent,
-    TakeDetailComponent
+    TakeDetailComponent,
+    TakeEditComponent
   ],
   imports: [
     BrowserModule,

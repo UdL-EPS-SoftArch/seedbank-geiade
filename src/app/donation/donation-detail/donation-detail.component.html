@@ -1,1 +1,34 @@
-<p>donation-detail works!</p>
+<div class="card mb-4">
+    <div class="card-block">
+      <h4 class="card-title col-md-12 p-3">{{'Donation with id ' + donationId}}</h4>
+      <div class="card-body row m-1">
+        <div class="col-md-4 p-3">
+          <h6 class="card-subtitle text-muted">ID</h6>
+          <p class="card-text">{{donationId}}</p>
+        </div>
+        <div class="col-md-4 p-3">
+          <h6 class="card-subtitle text-muted">Amount</h6>
+          <p class="card-text">{{donation.amount}}</p>
+        </div>
+        <div class="col-md-4 p-3">
+            <h6 class="card-subtitle text-muted">Weight</h6>
+            <p class="card-text">{{donation.weight}}</p>
+          </div>
+          <div class="col-md-4 p-3">
+            <h6 class="card-subtitle text-muted">Location</h6>
+            <p class="card-text">{{donation.location}}</p>
+          </div>
+      </div>
+      <div class="card-footer text-right">
+        <button id="listBtn" type="button" [routerLink]="['/donations']"
+                class="btn m-1 btn-outline-primary">Donation List
+        </button>
+        <button id="editBtn" type="button" [routerLink]="['edit']"
+                class="btn m-1 btn-outline-success">Edit
+        </button>
+        <button id="deleteBtn" type="button" [routerLink]="['delete']"
+                class="btn m-1 btn-outline-danger">Delete
+        </button>
+      </div>
+    </div>
+  </div>

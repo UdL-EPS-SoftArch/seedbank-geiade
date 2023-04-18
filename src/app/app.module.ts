@@ -43,7 +43,6 @@ import { TakeSearchComponent } from './take/take-search/take-search.component';
     UserEditComponent,
     UserDeleteComponent,
     UserSearchComponent,
-    TakeComponent,
     TakeDeleteComponent,
     TakeDetailComponent,
     TakeEditComponent,

@@ -26,6 +26,7 @@ import {UserService} from './user/user.service';
 import { PropagatorDeleteComponent } from './propagator/propagator-delete/propagator-delete.component';
 import { PropagatorDetailComponent } from './propagator/propagator-detail/propagator-detail.component';
 import { PropagatorEditComponent } from './propagator/propagator-edit/propagator-edit.component';
+import { PropagatorListComponent } from './propagator/propagator-list/propagator-list.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { PropagatorEditComponent } from './propagator/propagator-edit/propagator
     UserSearchComponent,
     PropagatorDeleteComponent,
     PropagatorDetailComponent,
-    PropagatorEditComponent
+    PropagatorEditComponent,
+    PropagatorListComponent
   ],
   imports: [
     BrowserModule,

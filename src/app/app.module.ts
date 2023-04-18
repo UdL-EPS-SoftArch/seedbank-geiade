@@ -27,6 +27,7 @@ import { TakeComponent } from './take/take.component';
 import { TakeDeleteComponent } from './take/take-delete/take-delete.component';
 import { TakeDetailComponent } from './take/take-detail/take-detail.component';
 import { TakeEditComponent } from './take/take-edit/take-edit.component';
+import { TakeListComponent } from './take/take-list/take-list.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { TakeEditComponent } from './take/take-edit/take-edit.component';
     TakeComponent,
     TakeDeleteComponent,
     TakeDetailComponent,
-    TakeEditComponent
+    TakeEditComponent,
+    TakeListComponent
   ],
   imports: [
     BrowserModule,

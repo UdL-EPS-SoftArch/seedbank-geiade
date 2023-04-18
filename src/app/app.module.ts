@@ -28,6 +28,7 @@ import { PropagatorDetailComponent } from './propagator/propagator-detail/propag
 import { PropagatorEditComponent } from './propagator/propagator-edit/propagator-edit.component';
 import { PropagatorListComponent } from './propagator/propagator-list/propagator-list.component';
 import { PropagatorRegisterComponent } from './propagator/propagator-register/propagator-register.component';
+import { PropagatorSearchComponent } from './propagator/propagator-search/propagator-search.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PropagatorRegisterComponent } from './propagator/propagator-register/pr
     PropagatorDetailComponent,
     PropagatorEditComponent,
     PropagatorListComponent,
-    PropagatorRegisterComponent
+    PropagatorRegisterComponent,
+    PropagatorSearchComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,38 @@
+<form id="donation-form" (ngSubmit)="onSubmit()" #form="ngForm">
+    <fieldset>
+  
+      <!-- Amount input -->
+      <div class="form-group mb-3" [class.was-validated]="amount.dirty || amount.touched">
+        <label class="control-label" for="amount">Amount*</label>
+        <input id="amount" name="amount" type="amount" class="form-control" required
+               [(ngModel)]="donation.amount" #amount="ngModel" pattern="[0-9]+([,\.][0-9]+)?">
+        <div class="invalid-feedback">An amount is required and must be a number</div>
+      </div>
+
+      <!-- Weight input -->
+      <div class="form-group mb-3" [class.was-validated]="weight.dirty || weight.touched">
+        <label class="control-label" for="weight">Weight*</label>
+        <input id="weight" name="weight" type="weight" class="form-control" required
+               [(ngModel)]="donation.weight" #weight="ngModel" pattern="[0-9]+([,\.][0-9]+)?">
+        <div class="invalid-feedback">A weight is required and must be a number</div>
+      </div>
+
+      <!-- Location input -->
+      <div class="form-group mb-3" [class.was-validated]="location.dirty || location.touched">
+        <label class="control-label" for="location">Location*</label>
+        <input id="location" name="location" type="location" class="form-control" required
+               [(ngModel)]="donation.location" #location="ngModel">
+        <div class="invalid-feedback">A location is required</div>
+      </div>
+  
+      <!-- Button -->
+      <div class="form-group fa-pull-right">
+        <button id="donationDetail" type="button" [routerLink]="['/donations/'+ donationId]"
+                class="btn btn-outline-primary">Back</button>
+        <button id="submit" type="submit" [disabled]="!form.form.valid"
+                class="btn btn-success ms-3">Submit</button>
+      </div>
+  
+    </fieldset>
+  </form>
+  

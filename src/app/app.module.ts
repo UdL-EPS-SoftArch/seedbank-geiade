@@ -23,7 +23,6 @@ import {HttpErrorInterceptor} from './error-handler/http-error-interceptor';
 import {AuthenticationBasicService} from './login-basic/authentication-basic.service';
 import {LoggedInGuard} from './login-basic/loggedin.guard';
 import {UserService} from './user/user.service';
-import { TakeComponent } from './take/take.component';
 import { TakeDeleteComponent } from './take/take-delete/take-delete.component';
 import { TakeDetailComponent } from './take/take-detail/take-detail.component';
 import { TakeEditComponent } from './take/take-edit/take-edit.component';

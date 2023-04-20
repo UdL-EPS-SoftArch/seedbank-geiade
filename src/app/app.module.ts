@@ -35,6 +35,7 @@ import { DonationListComponent } from './donation/donation-list/donation-list.co
 import { DonationAddComponent } from './donation/donation-add/donation-add.component';
 import { DonationDeleteComponent } from './donation/donation-delete/donation-delete.component';
 import { DonationSearchComponent } from './donation/donation-search/donation-search.component';
+import { TakeAddComponent } from './take/take-add/take-add.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { DonationSearchComponent } from './donation/donation-search/donation-sea
     DonationListComponent,
     DonationAddComponent,
     DonationDeleteComponent,
-    DonationSearchComponent
+    DonationSearchComponent,
+    TakeAddComponent
   ],
   imports: [
     BrowserModule,

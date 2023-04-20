@@ -35,6 +35,7 @@ import { RequestEditComponent } from './request/request-edit/request-edit.compon
 import { RequestListComponent } from './request/request-list/request-list.component';
 import { RequestRegisterComponent } from './request/request-register/request-register.component';
 import { RequestSearchComponent } from './request/request-search/request-search.component';
+import { RequestAddComponent } from './request/request-add/request-add.component';
 
 @NgModule({
   declarations: [
@@ -54,13 +55,13 @@ import { RequestSearchComponent } from './request/request-search/request-search.
     DonationAddComponent,
     DonationDeleteComponent,
     DonationSearchComponent,
-    DeleteComponent,
     RequestDeleteComponent,
     RequestDetailComponent,
     RequestEditComponent,
     RequestListComponent,
     RequestRegisterComponent,
-    RequestSearchComponent
+    RequestSearchComponent,
+    RequestAddComponent
   ],
   imports: [
     BrowserModule,

@@ -23,21 +23,18 @@ import {HttpErrorInterceptor} from './error-handler/http-error-interceptor';
 import {AuthenticationBasicService} from './login-basic/authentication-basic.service';
 import {LoggedInGuard} from './login-basic/loggedin.guard';
 import {UserService} from './user/user.service';
-<<<<<<< HEAD
 import { TakeDeleteComponent } from './take/take-delete/take-delete.component';
 import { TakeDetailComponent } from './take/take-detail/take-detail.component';
 import { TakeEditComponent } from './take/take-edit/take-edit.component';
 import { TakeListComponent } from './take/take-list/take-list.component';
 import { TakeRegisterComponent } from './take/take-register/take-register.component';
 import { TakeSearchComponent } from './take/take-search/take-search.component';
-=======
 import { DonationDetailComponent } from './donation/donation-detail/donation-detail.component';
 import { DonationEditComponent } from './donation/donation-edit/donation-edit.component';
 import { DonationListComponent } from './donation/donation-list/donation-list.component';
 import { DonationAddComponent } from './donation/donation-add/donation-add.component';
 import { DonationDeleteComponent } from './donation/donation-delete/donation-delete.component';
 import { DonationSearchComponent } from './donation/donation-search/donation-search.component';
->>>>>>> main
 
 @NgModule({
   declarations: [
@@ -51,21 +48,18 @@ import { DonationSearchComponent } from './donation/donation-search/donation-sea
     UserEditComponent,
     UserDeleteComponent,
     UserSearchComponent,
-<<<<<<< HEAD
     TakeDeleteComponent,
     TakeDetailComponent,
     TakeEditComponent,
     TakeListComponent,
     TakeRegisterComponent,
-    TakeSearchComponent
-=======
+    TakeSearchComponent,
     DonationDetailComponent,
     DonationEditComponent,
     DonationListComponent,
     DonationAddComponent,
     DonationDeleteComponent,
     DonationSearchComponent
->>>>>>> main
   ],
   imports: [
     BrowserModule,

@@ -27,7 +27,6 @@ import { TakeDeleteComponent } from './take/take-delete/take-delete.component';
 import { TakeDetailComponent } from './take/take-detail/take-detail.component';
 import { TakeEditComponent } from './take/take-edit/take-edit.component';
 import { TakeListComponent } from './take/take-list/take-list.component';
-import { TakeRegisterComponent } from './take/take-register/take-register.component';
 import { TakeSearchComponent } from './take/take-search/take-search.component';
 import { DonationDetailComponent } from './donation/donation-detail/donation-detail.component';
 import { DonationEditComponent } from './donation/donation-edit/donation-edit.component';
@@ -53,7 +52,6 @@ import { TakeAddComponent } from './take/take-add/take-add.component';
     TakeDetailComponent,
     TakeEditComponent,
     TakeListComponent,
-    TakeRegisterComponent,
     TakeSearchComponent,
     DonationDetailComponent,
     DonationEditComponent,

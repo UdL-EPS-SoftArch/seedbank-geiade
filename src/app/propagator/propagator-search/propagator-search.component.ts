@@ -10,7 +10,7 @@ import { ResourceCollection } from '@lagoshny/ngx-hateoas-client';
   templateUrl: './propagator-search.component.html'
 })
 
-export class propagatorSearchComponent {
+export class PropagatorSearchComponent {
   @Output() emitResults: EventEmitter<Propagator> = new EventEmitter();
   searchFailed = false;
   searching = false;

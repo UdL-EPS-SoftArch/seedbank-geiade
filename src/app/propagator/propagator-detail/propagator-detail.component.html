@@ -7,17 +7,13 @@
           <p class="card-text">{{propagatorId}}</p>
         </div>
         <div class="col-md-4 p-3">
-          <h6 class="card-subtitle text-muted">Amount</h6>
-          <p class="card-text">{{propagator.amount}}</p>
+          <h6 class="card-subtitle text-muted">Username</h6>
+          <p class="card-text">{{propagator.username}}</p>
         </div>
         <div class="col-md-4 p-3">
-            <h6 class="card-subtitle text-muted">Weight</h6>
-            <p class="card-text">{{propagator.weight}}</p>
-          </div>
-          <div class="col-md-4 p-3">
-            <h6 class="card-subtitle text-muted">Location</h6>
-            <p class="card-text">{{propagator.location}}</p>
-          </div>
+          <h6 class="card-subtitle text-muted">Role</h6>
+          <p class="card-text">{{propagator.getRoles().join(', ')}}</p>
+        </div>
       </div>
       <div class="card-footer text-right">
         <button id="listBtn" type="button" [routerLink]="['/propagators']"

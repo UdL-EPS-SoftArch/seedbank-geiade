@@ -8,7 +8,7 @@ import { PropagatorService } from '../propagator.service';
   templateUrl: './propagator-edit.component.html',
   styleUrls: ['./propagator-edit.component.css']
 })
-export class propagatorEditComponent implements OnInit{
+export class PropagatorEditComponent implements OnInit{
   public propagator: Propagator = new Propagator();
   public propagatorId;
 

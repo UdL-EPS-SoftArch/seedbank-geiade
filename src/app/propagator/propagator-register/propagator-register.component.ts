@@ -9,7 +9,7 @@ import { Location } from '@angular/common';
   selector: 'app-propagator-register',
   templateUrl: './propagator-register.component.html'
 })
-export class propagatorRegisterComponent implements OnInit {
+export class PropagatorRegisterComponent implements OnInit {
   public propagator: Propagator;
 
   constructor(private router: Router,

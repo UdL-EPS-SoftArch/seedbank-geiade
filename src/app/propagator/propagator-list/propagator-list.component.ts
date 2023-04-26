@@ -9,7 +9,7 @@ import { PagedResourceCollection } from '@lagoshny/ngx-hateoas-client';
   templateUrl: './propagator-list.component.html',
   styleUrls: ['./propagator-list.component.css']
 })
-export class propagatorListComponent {
+export class PropagatorListComponent {
   public propagators: Propagator[] = [];
   public pageSize = 5;
   public page = 1;

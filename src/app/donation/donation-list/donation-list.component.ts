@@ -21,7 +21,6 @@ export class DonationListComponent {
   }
 
   ngOnInit(): void {
-    debugger;
     this.donationService.getPage({ pageParams:  { size: this.pageSize }, sort: { id: 'ASC' } }).subscribe(
         (page: PagedResourceCollection<Donation>) => {
           this.donations = page.resources;

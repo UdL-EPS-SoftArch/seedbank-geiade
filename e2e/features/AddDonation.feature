@@ -61,3 +61,18 @@ Feature: Add donation
       | location | L           |
     And I click the Submit button
     Then I see error message "Donation location: la longitud debe estar entre 2 y 30"
+
+  Scenario: Add a donation as a user that is not a donor
+    Given I'm in the homepage
+    And I'm not logged in
+    And I log in as "demo" with password "password"
+    When I click the "Donations" dropdown
+    And I click the "List" dropdown-item
+    And I click the "Add" button
+    And I fill the form with
+      | FIELD    | VALUE       |
+      | amount   | 20          |
+      | weight   | 20          |
+      | location | Lleida           |
+    And I click the Submit button
+    Then I see error message "Donation by: no debe ser nulo"

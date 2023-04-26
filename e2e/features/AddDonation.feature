@@ -60,7 +60,7 @@ Feature: Add donation
       | weight   | 20          |
       | location | L           |
     And I click the Submit button
-    Then I see error message "Donation location: la longitud debe estar entre 2 y 30"
+    Then I see error message "Donation location: length must be between 2 and 30"
 
   Scenario: Add a donation as a user that is not a donor
     Given I'm in the homepage
@@ -75,4 +75,4 @@ Feature: Add donation
       | weight   | 20          |
       | location | Lleida           |
     And I click the Submit button
-    Then I see error message "Donation by: no debe ser nulo"
+    Then I see error message "Donation by: must not be null"

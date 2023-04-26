@@ -1,37 +1,48 @@
 <form id="propagator-form" (ngSubmit)="onSubmit()" #form="ngForm">
     <fieldset>
   
-      <!-- Amount input -->
-      <div class="form-group mb-3" [class.was-validated]="amount.dirty || amount.touched">
-        <label class="control-label" for="amount">Amount*</label>
-        <input id="amount" name="amount" type="amount" class="form-control" required
-               [(ngModel)]="propagator.amount" #amount="ngModel" pattern="[0-9]+([,\.][0-9]+)?">
-        <div class="invalid-feedback">An amount is required and must be a number</div>
-      </div>
-
-      <!-- Weight input -->
-      <div class="form-group mb-3" [class.was-validated]="weight.dirty || weight.touched">
-        <label class="control-label" for="weight">Weight*</label>
-        <input id="weight" name="weight" type="weight" class="form-control" required
-               [(ngModel)]="propagator.weight" #weight="ngModel" pattern="[0-9]+([,\.][0-9]+)?">
-        <div class="invalid-feedback">A weight is required and must be a number</div>
-      </div>
-
-      <!-- Location input -->
-      <div class="form-group mb-3" [class.was-validated]="location.dirty || location.touched">
-        <label class="control-label" for="location">Location*</label>
-        <input id="location" name="location" type="location" class="form-control" required
-               [(ngModel)]="propagator.location" #location="ngModel">
-        <div class="invalid-feedback">A location is required</div>
-      </div>
-  
-      <!-- Button -->
-      <div class="form-group fa-pull-right">
-        <button id="propagatorDetail" type="button" [routerLink]="['/propagators/'+ propagatorId]"
-                class="btn btn-outline-primary">Back</button>
-        <button id="submit" type="submit" [disabled]="!form.form.valid"
-                class="btn btn-success ms-3">Submit</button>
-      </div>
+        <!-- Username read only -->
+        <div class="form-group mb-3">
+          <label class="control-label" for="username">Username</label>
+          <input id="username" name="username" type="text" class="form-control" readonly [ngModel]="propagator.id">
+        </div>
+    
+        <!-- Role read only -->
+        <div *ngIf="user.getRoles().length > 0" class="form-group mb-3">
+          <label class="control-label" for="role">Role</label>
+          <input id="role" name="role" type="text" class="form-control" readonly [ngModel]="user.getRoles().join(', ')">
+        </div>
+    
+        <!-- E-Mail input -->
+        <div class="form-group mb-3" [class.was-validated]="email.dirty || email.touched">
+          <label class="control-label" for="email">E-Mail*</label>
+          <input id="email" name="email" type="email" class="form-control" required
+                 [(ngModel)]="propagator.email" #email="ngModel">
+          <div class="invalid-feedback">An e-mail is required</div>
+        </div>
+    
+        <!-- Change password checkbox -->
+        <div *ngIf="!user.passwordReset" class="form-check mb-3">
+          <input id="isPasswordReset" name="isPasswordReset" type="checkbox" class="form-check-input"
+                 [(ngModel)]="user.passwordReset">
+          <label class="form-check-label" for="isPasswordReset">Change password?</label>
+        </div>
+    
+        <!-- Password input -->
+        <div *ngIf="user.passwordReset" class="form-group mb-3" [class.was-validated]="password.dirty || password.touched">
+          <label class="control-label" for="password">Password</label>
+          <input id="password" name="password" type="password" class="form-control" required minlength="8" maxlength="256"
+                 [(ngModel)]="user.password" #password="ngModel">
+          <div class="invalid-feedback">A password longer than 8 characters is required</div>
+        </div>
+    
+        <!-- Button -->
+        <div class="form-group fa-pull-right">
+          <button id="userDetail" type="button" [routerLink]="['/propagators/'+getCurrentUserName()]"
+                  class="btn btn-outline-primary">Back</button>
+          <button id="submit" type="submit" [disabled]="!form.form.valid"
+                  class="btn btn-success ms-3">Submit</button>
+        </div>
   
     </fieldset>
   </form>

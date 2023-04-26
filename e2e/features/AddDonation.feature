@@ -8,7 +8,7 @@ Feature: Add donation
     And I log in as "userdonor" with password "password"
     When I click the "Donations" dropdown
     And I click the "List" dropdown-item
-    And I click the "Add" button
+    And I click the Add button
     And I fill the form with
       | FIELD    | VALUE       |
       | amount   | 10          |
@@ -23,7 +23,7 @@ Feature: Add donation
     And I log in as "userdonor" with password "password"
     When I click the "Donations" dropdown
     And I click the "List" dropdown-item
-    And I click the "Add" button
+    And I click the Add button
     And I fill the form with
       | FIELD    | VALUE       |
       | amount   | a           |
@@ -38,7 +38,7 @@ Feature: Add donation
     And I log in as "userdonor" with password "password"
     When I click the "Donations" dropdown
     And I click the "List" dropdown-item
-    And I click the "Add" button
+    And I click the Add button
     And I fill the form with
       | FIELD    | VALUE       |
       | amount   | 21          |
@@ -53,7 +53,7 @@ Feature: Add donation
     And I log in as "userdonor" with password "password"
     When I click the "Donations" dropdown
     And I click the "List" dropdown-item
-    And I click the "Add" button
+    And I click the Add button
     And I fill the form with
       | FIELD    | VALUE       |
       | amount   | 20          |
@@ -68,7 +68,7 @@ Feature: Add donation
     And I log in as "demo" with password "password"
     When I click the "Donations" dropdown
     And I click the "List" dropdown-item
-    And I click the "Add" button
+    And I click the Add button
     And I fill the form with
       | FIELD    | VALUE       |
       | amount   | 20          |

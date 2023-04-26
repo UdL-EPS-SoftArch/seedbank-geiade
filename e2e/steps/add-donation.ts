@@ -23,8 +23,8 @@ Given('I click the {string} dropdown-item', (option) => {
   cy.get('#donations-list').contains(option).click();
 });
 
-Given('I click the {string} button', (option) => {
-  cy.get('#donation-button-add').contains(option).click();
+Given('I click the Add button', () => {
+  cy.get('#donation-button-add').contains('Add').click();
 });
 
 Given('I click the Submit button', () => {

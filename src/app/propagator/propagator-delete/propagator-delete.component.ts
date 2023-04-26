@@ -14,17 +14,17 @@ export class PropagatorDeleteComponent implements OnInit{
 
   constructor(private route: ActivatedRoute,
               private router: Router,
-              private donationService: PropagatorService) {
+              private propagatorService: PropagatorService) {
   }
 
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
-    this.donationService.getResource(this.id).subscribe(
+    this.propagatorService.getResource(this.id).subscribe(
       propagator => this.propagator = propagator);
   }
 
   delete(): void {
-    this.donationService.deleteResource(this.propagator).subscribe(
+    this.propagatorService.deleteResource(this.propagator).subscribe(
       () => {
         this.router.navigate(['']);
       });

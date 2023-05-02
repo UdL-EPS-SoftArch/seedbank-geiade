@@ -14,7 +14,7 @@
         <a class="nav-link dropdown-toggle" id="playerDropdown" role="button"
            aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>Users</a>
         <div class="dropdown-menu" aria-labelledby="playDropdown" ngbDropdownMenu>
-          <a class="dropdown-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"
+          <a id="users-list" class="dropdown-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"
              [routerLink]="['/users']"><span class="fas fa-user-circle"></span> List</a>
         </div>
       </li>
@@ -22,7 +22,7 @@
         <a class="nav-link dropdown-toggle" id="playerDropdown" role="button"
            aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>Donations</a>
         <div class="dropdown-menu" aria-labelledby="playDropdown" ngbDropdownMenu>
-          <a class="dropdown-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"
+          <a id="donations-list" class="dropdown-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"
              [routerLink]="['/donations']"><span class="fas fa-user-circle"></span> List</a>
         </div>
       </li>  

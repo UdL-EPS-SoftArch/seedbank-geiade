@@ -14,7 +14,16 @@ import { PropagatorEditComponent } from './propagator/propagator-edit/propagator
 import { PropagatorListComponent } from './propagator/propagator-list/propagator-list.component';
 import { PropagatorRegisterComponent } from './propagator/propagator-register/propagator-register.component';
 import { PropagatorSearchComponent } from './propagator/propagator-search/propagator-search.component';
-
+import { TakeEditComponent } from './take/take-edit/take-edit.component';
+import { TakeDeleteComponent } from './take/take-delete/take-delete.component';
+import { TakeDetailComponent } from './take/take-detail/take-detail.component';
+import { TakeListComponent } from './take/take-list/take-list.component';
+import { TakeAddComponent } from './take/take-add/take-add.component';
+import { DonationAddComponent } from './donation/donation-add/donation-add.component';
+import { DonationDeleteComponent } from './donation/donation-delete/donation-delete.component';
+import { DonationEditComponent } from './donation/donation-edit/donation-edit.component';
+import { DonationDetailComponent } from './donation/donation-detail/donation-detail.component';
+import { DonationListComponent } from './donation/donation-list/donation-list.component';
 const routes: Routes = [
   { path: 'users/create', component: UserRegisterComponent},
   { path: 'users/:id/delete', component: UserDeleteComponent, canActivate: [LoggedInGuard]},
@@ -25,6 +34,16 @@ const routes: Routes = [
   { path: 'propagators/:id/edit', component: UserEditComponent, canActivate: [LoggedInGuard]},
   { path: 'propagators/:id', component: UserDetailComponent, canActivate: [LoggedInGuard]},
   { path: 'propagators', component: UserListComponent, canActivate: [LoggedInGuard]},
+  { path: 'takes/add', component: TakeAddComponent, canActivate: [LoggedInGuard]},
+  { path: 'takes/:id/delete', component: TakeDeleteComponent, canActivate: [LoggedInGuard]},
+  { path: 'takes/:id/edit', component: TakeEditComponent, canActivate: [LoggedInGuard]},
+  { path: 'takes/:id', component: TakeDetailComponent, canActivate: [LoggedInGuard]},
+  { path: 'takes', component: TakeListComponent, canActivate: [LoggedInGuard]},
+  { path: 'donations/add', component: DonationAddComponent, canActivate: [LoggedInGuard]},
+  { path: 'donations/:id/delete', component: DonationDeleteComponent, canActivate: [LoggedInGuard]},
+  { path: 'donations/:id/edit', component: DonationEditComponent, canActivate: [LoggedInGuard]},
+  { path: 'donations/:id', component: DonationDetailComponent, canActivate: [LoggedInGuard]},
+  { path: 'donations', component: DonationListComponent, canActivate: [LoggedInGuard]},
   { path: 'about', component: AboutComponent},
   { path: '404', component: NotFoundComponent},
   { path: '', redirectTo: 'about', pathMatch: 'full'},

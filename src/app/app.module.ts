@@ -29,6 +29,18 @@ import { PropagatorEditComponent } from './propagator/propagator-edit/propagator
 import { PropagatorListComponent } from './propagator/propagator-list/propagator-list.component';
 import { PropagatorRegisterComponent } from './propagator/propagator-register/propagator-register.component';
 import { PropagatorSearchComponent } from './propagator/propagator-search/propagator-search.component';
+import { TakeDeleteComponent } from './take/take-delete/take-delete.component';
+import { TakeDetailComponent } from './take/take-detail/take-detail.component';
+import { TakeEditComponent } from './take/take-edit/take-edit.component';
+import { TakeListComponent } from './take/take-list/take-list.component';
+import { TakeSearchComponent } from './take/take-search/take-search.component';
+import { DonationDetailComponent } from './donation/donation-detail/donation-detail.component';
+import { DonationEditComponent } from './donation/donation-edit/donation-edit.component';
+import { DonationListComponent } from './donation/donation-list/donation-list.component';
+import { DonationAddComponent } from './donation/donation-add/donation-add.component';
+import { DonationDeleteComponent } from './donation/donation-delete/donation-delete.component';
+import { DonationSearchComponent } from './donation/donation-search/donation-search.component';
+import { TakeAddComponent } from './take/take-add/take-add.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +59,19 @@ import { PropagatorSearchComponent } from './propagator/propagator-search/propag
     PropagatorEditComponent,
     PropagatorListComponent,
     PropagatorRegisterComponent,
-    PropagatorSearchComponent
+    PropagatorSearchComponent,
+    TakeDeleteComponent,
+    TakeDetailComponent,
+    TakeEditComponent,
+    TakeListComponent,
+    TakeSearchComponent,
+    DonationDetailComponent,
+    DonationEditComponent,
+    DonationListComponent,
+    DonationAddComponent,
+    DonationDeleteComponent,
+    DonationSearchComponent,
+    TakeAddComponent
   ],
   imports: [
     BrowserModule,

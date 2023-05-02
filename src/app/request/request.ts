@@ -1,5 +1,7 @@
 import { HateoasResource, Resource } from "@lagoshny/ngx-hateoas-client";
 import { User } from "../login-basic/user";
+import { Propagator } from "../propagator/propagator";
+import { Take } from "../take/take";
 
 @HateoasResource('requests')
 export class Request extends Resource{
@@ -16,16 +18,5 @@ export class Request extends Resource{
         super();
         Object.assign(this as any, values);
     }
-
-}
-
-export class Propagator extends User{
-    constructor(values: object = {}) {
-        super();
-        Object.assign(this as any, values);
-    }
-}
-
-export interface Take {
 
 }

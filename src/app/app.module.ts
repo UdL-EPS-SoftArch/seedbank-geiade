@@ -40,6 +40,13 @@ import { DonationListComponent } from './donation/donation-list/donation-list.co
 import { DonationAddComponent } from './donation/donation-add/donation-add.component';
 import { DonationDeleteComponent } from './donation/donation-delete/donation-delete.component';
 import { DonationSearchComponent } from './donation/donation-search/donation-search.component';
+import { RequestDeleteComponent } from './request/request-delete/request-delete.component';
+import { RequestDetailComponent } from './request/request-detail/request-detail.component';
+import { RequestEditComponent } from './request/request-edit/request-edit.component';
+import { RequestListComponent } from './request/request-list/request-list.component';
+import { RequestRegisterComponent } from './request/request-register/request-register.component';
+import { RequestSearchComponent } from './request/request-search/request-search.component';
+import { RequestAddComponent } from './request/request-add/request-add.component';
 import { TakeAddComponent } from './take/take-add/take-add.component';
 
 @NgModule({
@@ -72,6 +79,13 @@ import { TakeAddComponent } from './take/take-add/take-add.component';
     DonationAddComponent,
     DonationDeleteComponent,
     DonationSearchComponent,
+    RequestDeleteComponent,
+    RequestDetailComponent,
+    RequestEditComponent,
+    RequestListComponent,
+    RequestRegisterComponent,
+    RequestSearchComponent,
+    RequestAddComponent,
     TakeAddComponent
   ],
   imports: [

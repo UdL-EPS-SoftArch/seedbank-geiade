@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Donation } from '../donation';
 import { DonationService } from '../donation.service';
@@ -9,7 +9,7 @@ import { PagedResourceCollection } from '@lagoshny/ngx-hateoas-client';
   templateUrl: './donation-list.component.html',
   styleUrls: ['./donation-list.component.css']
 })
-export class DonationListComponent {
+export class DonationListComponent implements OnInit{
   public donations: Donation[] = [];
   public pageSize = 5;
   public page = 1;
@@ -21,7 +21,6 @@ export class DonationListComponent {
   }
 
   ngOnInit(): void {
-    debugger;
     this.donationService.getPage({ pageParams:  { size: this.pageSize }, sort: { id: 'ASC' } }).subscribe(
         (page: PagedResourceCollection<Donation>) => {
           this.donations = page.resources;

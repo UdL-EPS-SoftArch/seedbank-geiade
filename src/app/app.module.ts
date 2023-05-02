@@ -60,6 +60,7 @@ import { TakeAddComponent } from './take/take-add/take-add.component';
     PropagatorListComponent,
     PropagatorRegisterComponent,
     PropagatorSearchComponent,
+    PropagatorSearchComponent,
     TakeDeleteComponent,
     TakeDetailComponent,
     TakeEditComponent,

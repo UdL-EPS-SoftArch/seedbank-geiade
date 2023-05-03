@@ -30,7 +30,7 @@
         <a class="nav-link dropdown-toggle" id="playerDropdown" role="button"
            aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>Takes</a>
         <div class="dropdown-menu" aria-labelledby="playDropdown" ngbDropdownMenu>
-          <a class="dropdown-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"
+          <a id="takes-list" class="dropdown-item" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }"
              [routerLink]="['/takes']"><span class="fas fa-user-circle"></span> List</a>
         </div>
       </li>

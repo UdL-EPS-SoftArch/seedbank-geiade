@@ -19,11 +19,11 @@ Given('I click the {string} dropdown', (option) => {
   cy.get('.nav-link').contains(option).click();
 });
 
-Given('I click the {string} dropdown-item', (option) => {
+Given('I click the {string} take-dropdown', (option) => {
   cy.get('#takes-list').contains(option).click();
 });
 
-Given('I click the Add button', () => {
+Given('I click the Add take button', () => {
   cy.get('#take-button-add').contains('Add').click();
 });
 

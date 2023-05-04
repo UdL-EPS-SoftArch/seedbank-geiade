@@ -23,6 +23,12 @@ import {HttpErrorInterceptor} from './error-handler/http-error-interceptor';
 import {AuthenticationBasicService} from './login-basic/authentication-basic.service';
 import {LoggedInGuard} from './login-basic/loggedin.guard';
 import {UserService} from './user/user.service';
+import { PropagatorDeleteComponent } from './propagator/propagator-delete/propagator-delete.component';
+import { PropagatorDetailComponent } from './propagator/propagator-detail/propagator-detail.component';
+import { PropagatorEditComponent } from './propagator/propagator-edit/propagator-edit.component';
+import { PropagatorListComponent } from './propagator/propagator-list/propagator-list.component';
+import { PropagatorRegisterComponent } from './propagator/propagator-register/propagator-register.component';
+import { PropagatorSearchComponent } from './propagator/propagator-search/propagator-search.component';
 import { TakeDeleteComponent } from './take/take-delete/take-delete.component';
 import { TakeDetailComponent } from './take/take-detail/take-detail.component';
 import { TakeEditComponent } from './take/take-edit/take-edit.component';
@@ -34,6 +40,13 @@ import { DonationListComponent } from './donation/donation-list/donation-list.co
 import { DonationAddComponent } from './donation/donation-add/donation-add.component';
 import { DonationDeleteComponent } from './donation/donation-delete/donation-delete.component';
 import { DonationSearchComponent } from './donation/donation-search/donation-search.component';
+import { RequestDeleteComponent } from './request/request-delete/request-delete.component';
+import { RequestDetailComponent } from './request/request-detail/request-detail.component';
+import { RequestEditComponent } from './request/request-edit/request-edit.component';
+import { RequestListComponent } from './request/request-list/request-list.component';
+import { RequestRegisterComponent } from './request/request-register/request-register.component';
+import { RequestSearchComponent } from './request/request-search/request-search.component';
+import { RequestAddComponent } from './request/request-add/request-add.component';
 import { TakeAddComponent } from './take/take-add/take-add.component';
 
 @NgModule({
@@ -48,6 +61,13 @@ import { TakeAddComponent } from './take/take-add/take-add.component';
     UserEditComponent,
     UserDeleteComponent,
     UserSearchComponent,
+    PropagatorDeleteComponent,
+    PropagatorDetailComponent,
+    PropagatorEditComponent,
+    PropagatorListComponent,
+    PropagatorRegisterComponent,
+    PropagatorSearchComponent,
+    PropagatorSearchComponent,
     TakeDeleteComponent,
     TakeDetailComponent,
     TakeEditComponent,
@@ -59,6 +79,13 @@ import { TakeAddComponent } from './take/take-add/take-add.component';
     DonationAddComponent,
     DonationDeleteComponent,
     DonationSearchComponent,
+    RequestDeleteComponent,
+    RequestDetailComponent,
+    RequestEditComponent,
+    RequestListComponent,
+    RequestRegisterComponent,
+    RequestSearchComponent,
+    RequestAddComponent,
     TakeAddComponent
   ],
   imports: [

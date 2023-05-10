@@ -46,4 +46,19 @@ Feature: Add request
       | location | L           |
     And I click the Submit button
     Then I see error message "Request location: length must be between 2 and 30"
+
+  Scenario: Add a request as a user that is not a propagator
+    Given I'm in the homepage
+    And I'm not logged in
+    And I log in as "demo" with password "password"
+    When I click the "Requests" dropdown
+    And I click the requests "List" dropdown-item
+    And I click the request Add button
+    And I fill the form with
+      | FIELD    | VALUE       |
+      | amount   | 20          |
+      | weight   | 20          |
+      | location | Lleida           |
+    And I click the Submit button
+    Then I see error message "Argument for @NotNull parameter 'by' of cat/udl/eps/softarch/demo/domain/Request.setBy must not be null"
   

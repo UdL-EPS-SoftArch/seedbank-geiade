@@ -48,6 +48,7 @@ import { RequestRegisterComponent } from './request/request-register/request-reg
 import { RequestSearchComponent } from './request/request-search/request-search.component';
 import { RequestAddComponent } from './request/request-add/request-add.component';
 import { TakeAddComponent } from './take/take-add/take-add.component';
+import { BatchDeleteComponent } from './batch/batch-delete/batch-delete.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { TakeAddComponent } from './take/take-add/take-add.component';
     RequestRegisterComponent,
     RequestSearchComponent,
     RequestAddComponent,
-    TakeAddComponent
+    TakeAddComponent,
+    BatchDeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -60,7 +60,7 @@ Feature: Add take
       | weight   | 15          |
       | location | B           |
     And I click the Submit button
-    Then I see error message "Take location: la longitud debe estar entre 2 y 30"
+    Then I see error message "Take location: length must be between 2 and 30"
 
   Scenario: Add a Take as a user that is not a propagator
     Given I'm in the homepage
@@ -75,4 +75,4 @@ Feature: Add take
       | weight   | 15          |
       | location | Barcelona   |
     And I click the Submit button
-    Then I see error message "Take by: no debe ser nulo"
+    Then I see error message "Take by: must not be null"

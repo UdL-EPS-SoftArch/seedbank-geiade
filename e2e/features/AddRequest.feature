@@ -75,4 +75,4 @@ Feature: Add request
       | weight   | 20          |
       | location | Lleida           |
     And I click the Submit button
-    Then I see error message "Argument for @NotNull parameter 'by' of cat/udl/eps/softarch/demo/domain/Request.setBy must not be null"
+    Then I see error message "by is marked non-null but is null"

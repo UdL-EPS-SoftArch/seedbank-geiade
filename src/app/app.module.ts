@@ -49,6 +49,7 @@ import { RequestSearchComponent } from './request/request-search/request-search.
 import { RequestAddComponent } from './request/request-add/request-add.component';
 import { TakeAddComponent } from './take/take-add/take-add.component';
 import { BatchDeleteComponent } from './batch/batch-delete/batch-delete.component';
+import { BatchAddComponent } from './batch/batch-add/batch-add.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +89,8 @@ import { BatchDeleteComponent } from './batch/batch-delete/batch-delete.componen
     RequestSearchComponent,
     RequestAddComponent,
     TakeAddComponent,
-    BatchDeleteComponent
+    BatchDeleteComponent,
+    BatchAddComponent
   ],
   imports: [
     BrowserModule,

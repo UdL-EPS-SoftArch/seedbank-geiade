@@ -24,6 +24,11 @@ import { DonationDeleteComponent } from './donation/donation-delete/donation-del
 import { DonationEditComponent } from './donation/donation-edit/donation-edit.component';
 import { DonationDetailComponent } from './donation/donation-detail/donation-detail.component';
 import { DonationListComponent } from './donation/donation-list/donation-list.component';
+import { BatchAddComponent } from './batch/batch-add/batch-add.component';
+import { BatchDeleteComponent } from './batch/batch-delete/batch-delete.component';
+import { BatchEditComponent } from './batch/batch-edit/batch-edit.component';
+import { BatchDetailComponent } from './batch/batch-detail/batch-detail.component';
+import { BatchListComponent } from './batch/batch-list/batch-list.component';
 
 import { RequestListComponent } from './request/request-list/request-list.component';
 import { RequestDetailComponent } from './request/request-detail/request-detail.component';

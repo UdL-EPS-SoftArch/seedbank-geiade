@@ -51,6 +51,7 @@ import { TakeAddComponent } from './take/take-add/take-add.component';
 import { BatchDeleteComponent } from './batch/batch-delete/batch-delete.component';
 import { BatchAddComponent } from './batch/batch-add/batch-add.component';
 import { BatchDetailComponent } from './batch/batch-detail/batch-detail.component';
+import { BatchEditComponent } from './batch/batch-edit/batch-edit.component';
 
 @NgModule({
   declarations: [
@@ -92,7 +93,8 @@ import { BatchDetailComponent } from './batch/batch-detail/batch-detail.componen
     TakeAddComponent,
     BatchDeleteComponent,
     BatchAddComponent,
-    BatchDetailComponent
+    BatchDetailComponent,
+    BatchEditComponent
   ],
   imports: [
     BrowserModule,

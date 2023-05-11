@@ -1,1 +1,29 @@
-<p>batch-list works!</p>
+<div class="d-flex justify-content-end mb-3">
+    <a id="batch-button-add" class="btn btn-primary" [routerLink]="['/batchs/add']">Add</a>
+  </div>
+  <div class="card mb-1" *ngFor="let batch of batchs">
+    <div class="card-block row m-1 col-12">
+      <div class="card-body row align-items-center">
+        <div class="col-3 mt-1">
+          <a class="card-text" [routerLink]="[batch.uri]">SELECT</a>
+        </div>
+        <div class="col-3 mt-1">
+          <h6 class="card-subtitle text-muted">Amount</h6>
+          <p class="card-text">{{batch.amount}}</p>
+        </div>
+        <div class="col-3 mt-1">
+          <h6 class="card-subtitle text-muted">Weight</h6>
+          <p class="card-text">{{batch.weight}}</p>
+        </div>
+        <div class="col-3 mt-1">
+          <h6 class="card-subtitle text-muted">Location</h6>
+          <p class="card-text">{{batch.location}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <ngb-pagination class="d-flex justify-content-center"
+                  [(page)]="page" [pageSize]="pageSize" [collectionSize]="totalbatchs"
+                  (pageChange)="changePage()"></ngb-pagination>
+  

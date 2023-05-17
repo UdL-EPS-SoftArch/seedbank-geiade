@@ -24,6 +24,11 @@ import { DonationDeleteComponent } from './donation/donation-delete/donation-del
 import { DonationEditComponent } from './donation/donation-edit/donation-edit.component';
 import { DonationDetailComponent } from './donation/donation-detail/donation-detail.component';
 import { DonationListComponent } from './donation/donation-list/donation-list.component';
+import { BatchAddComponent } from './batch/batch-add/batch-add.component';
+import { BatchDeleteComponent } from './batch/batch-delete/batch-delete.component';
+import { BatchEditComponent } from './batch/batch-edit/batch-edit.component';
+import { BatchDetailComponent } from './batch/batch-detail/batch-detail.component';
+import { BatchListComponent } from './batch/batch-list/batch-list.component';
 
 import { RequestListComponent } from './request/request-list/request-list.component';
 import { RequestDetailComponent } from './request/request-detail/request-detail.component';
@@ -52,6 +57,11 @@ const routes: Routes = [
   { path: 'donations/:id/edit', component: DonationEditComponent, canActivate: [LoggedInGuard]},
   { path: 'donations/:id', component: DonationDetailComponent, canActivate: [LoggedInGuard]},
   { path: 'donations', component: DonationListComponent, canActivate: [LoggedInGuard]},
+  { path: 'batchs/add', component: BatchAddComponent, canActivate: [LoggedInGuard]},
+  { path: 'batchs/:id/delete', component: BatchDeleteComponent, canActivate: [LoggedInGuard]},
+  { path: 'batchs/:id/edit', component: BatchEditComponent, canActivate: [LoggedInGuard]},
+  { path: 'batchs/:id', component: BatchDetailComponent, canActivate: [LoggedInGuard]},
+  { path: 'batchs', component: BatchListComponent, canActivate: [LoggedInGuard]},
   { path: 'requests/add', component: RequestAddComponent, canActivate: [LoggedInGuard]},
   { path: 'requests/:id/delete', component: RequestDeleteComponent, canActivate: [LoggedInGuard]},
   { path: 'requests/:id/edit', component: RequestEditComponent, canActivate: [LoggedInGuard]},
